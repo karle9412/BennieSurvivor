@@ -1,10 +1,10 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
 public class Player : MonoBehaviour
 {
 
     [SerializeField] private float moveSpeed = 5f;
-
 
     private Vector2 movement;
 
