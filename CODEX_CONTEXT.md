@@ -357,7 +357,7 @@ Codex가 프로젝트를 처음 열었을 때 우선 확인할 것:
 7. Bennie Sprite Sheet Import / Slice 상태 확인
 8. 씬 실행 후 이동과 애니메이션이 정상 동작하는지 확인
 
-현재 단계에서는 새로운 시스템 추가보다 **플레이어 이동 + 애니메이션을 안정적으로 완성하는 것**이 우선이다.
+이동과 애니메이션, 무한 바닥, 적 추적 및 기본 체력·접촉 피해가 구현되었다. 다음에는 플레이어 피격 무적 시간과 전투 기능을 단계적으로 추가한다.
 
 ## 14. 공통 캐릭터 이미지 규격 (사용자 지정)
 
@@ -366,4 +366,14 @@ Codex가 프로젝트를 처음 열었을 때 우선 확인할 것:
 - Pixels Per Unit은 128, Transform Scale은 (1, 1, 1)이다. 큰 생성 이미지를 서로 다른 PPU로 보정해 납품하지 않는다.
 - 베니 Idle 첫 프레임의 불투명 영역은 약 94 x 95 픽셀, 하단 기준선은 이미지 위에서 y=116이다. 기본 캐릭터는 이 영역에 비례 축소하고 같은 하단 기준선에 배치한다. 넓고 낮은 캐릭터의 종횡비는 유지한다.
 - 크기 정규화 시 Nearest Neighbor와 투명 여백을 사용하며 실제 파일 해상도를 검증한다.
-- 누루링 정규화 파일: Assets/02.Image/Nururing_Base_128.png 및 Nururing_Idle_128.png. 기존 대형 파일과 구분한다.
+- 누루링 정규화 파일: Assets/02.Image/Nururing/Nururing_Base_128.png 및 Assets/02.Image/Nururing/Nururing_Idle_128.png.
+
+## 15. 체력·접촉 피해 및 폴더 정리 (2026-10-27)
+
+- `Assets/01.Script/Common/Health.cs`: 최대 체력으로 초기화, TakeDamage로 피해 적용, 0에서 비활성화한다.
+- `Assets/01.Script/Enemies/Enemy.cs`: 기존 EnemyFollow의 이름을 변경했다. 거리 제한 없이 추적하며 OnTriggerStay2D에서 Target의 Health에 일정 간격으로 피해를 준다.
+- 사용자가 접촉 중 체력 감소, 떨어진 뒤 피해 중단, 사망 시 베니 비활성화를 확인했다.
+- 현재 피해 간격은 적별 공격 간격이다. 플레이어 공통 피격 무적 시간은 아직 없다.
+- 스크립트는 Player/Enemies/Common/Camera/World, 이미지는 Bennie/Nururing/Environment, 애니메이션은 Bennie/Nururing 하위 폴더로 분류했다.
+- 에셋과 기존 .meta를 함께 이동해 GUID를 유지했다. 코드 동작은 폴더 정리 과정에서 변경하지 않았다.
+- 사용자는 직접 코드를 작성하며 학습한다. 별도 수정 요청 없이 스크립트를 직접 추가하거나 변경하지 말고 코드와 적용 방법을 안내한다.
