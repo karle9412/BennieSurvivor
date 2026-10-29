@@ -3,6 +3,9 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField, Min(1)] private int maxhealth = 100;
+    [SerializeField, Min(0f)] private float NoDamageTime = 0.5f;
+
+    private float nextDamageTime = 0f;
 
     public int CurrentHealth { get; private set; }
     public int MaxHealth => maxhealth;
@@ -18,9 +21,15 @@ public class Health : MonoBehaviour
         if (Isdead || damage <= 0)
             return;
 
+        if (Time.time < nextDamageTime)
+            return;
+
         CurrentHealth = Mathf.Max(CurrentHealth - damage, 0);
-        Debug.Log($"{gameObject.name} 체력 : {CurrentHealth} / {maxhealth}"); 
-        if(Isdead)
+        Debug.Log($"{gameObject.name} 체력 : {CurrentHealth} / {maxhealth}");
+
+        nextDamageTime = Time.time + NoDamageTime;
+
+        if (Isdead)
         {
             Die();
         }
@@ -34,7 +43,7 @@ public class Health : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    [ContextMenu("테슽트 : 10 피해")]
+    [ContextMenu("테스트 : 10 피해")]
     private void TestDamage()
     {
         if (!Application.isPlaying)

@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: fa305eddede24f94da80e7df9aa662b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1590128771109078370
+    second: Axe_Slash_0
+  - first:
+      213: 5238394555376253946
+    second: Axe_Slash_1
+  - first:
+      213: -3935953063909739312
+    second: Axe_Slash_2
+  - first:
+      213: -8125753863490127474
+    second: Axe_Slash_3
+  - first:
+      213: 4634845715588462404
+    second: Axe_Slash_4
+  - first:
+      213: 6786176579231940275
+    second: Axe_Slash_5
+  - first:
+      213: 7513821932200512929
+    second: Axe_Slash_6
+  - first:
+      213: -9012063064759131512
+    second: Axe_Slash_7
+  - first:
+      213: 3684371936745760264
+    second: Axe_Slash_8
+  - first:
+      213: 1102792776506329703
+    second: Axe_Slash_9
+  - first:
+      213: -2721129901699789134
+    second: Axe_Slash_10
+  - first:
+      213: -3506946533067805817
+    second: Axe_Slash_11
+  - first:
+      213: 7715043096842236149
+    second: Axe_Slash_12
+  - first:
+      213: -3653791722795858236
+    second: Axe_Slash_13
+  - first:
+      213: 5428320459675560302
+    second: Axe_Slash_14
+  - first:
+      213: -4537603936328301956
+    second: Axe_Slash_15
+  - first:
+      213: -4945144866423677852
+    second: Axe_Slash_16
+  - first:
+      213: 1871002428558431998
+    second: Axe_Slash_17
+  - first:
+      213: -7597840338710608976
+    second: Axe_Slash_18
+  - first:
+      213: -254333689051946356
+    second: Axe_Slash_19
+  - first:
+      213: -4555872503566870622
+    second: Axe_Slash_20
+  - first:
+      213: -5017459775671803761
+    second: Axe_Slash_21
+  - first:
+      213: -7122180743285922994
+    second: Axe_Slash_22
+  - first:
+      213: -4393262214676265479
+    second: Axe_Slash_23
+  - first:
+      213: 6606725662803664693
+    second: Axe_Slash_24
+  - first:
+      213: -7888501091567806539
+    second: Axe_Slash_25
+  - first:
+      213: -6307619198950711465
+    second: Axe_Slash_26
+  - first:
+      213: 7398244403042453007
+    second: Axe_Slash_27
+  - first:
+      213: -6534238261725645490
+    second: Axe_Slash_28
+  - first:
+      213: 4191303527650314025
+    second: Axe_Slash_29
+  - first:
+      213: -2299073927014505705
+    second: Axe_Slash_30
+  - first:
+      213: -1640611043984793450
+    second: Axe_Slash_31
+  - first:
+      213: -8422706932345561933
+    second: Axe_Slash_32
+  - first:
+      213: -6894025343812306877
+    second: Axe_Slash_33
+  - first:
+      213: 658710279397136174
+    second: Axe_Slash_34
+  - first:
+      213: 7287295122070756213
+    second: Axe_Slash_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Axe_Slash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265c51541b5411610800000000000000
+      internalID: 1590128771109078370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Axe_Slash_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbba8a081482b840800000000000000
+      internalID: 5238394555376253946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Axe_Slash_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4bc0dba8fa069c0800000000000000
+      internalID: -3935953063909739312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Axe_Slash_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89b96ac9e58b3f80800000000000000
+      internalID: -8125753863490127474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3df8985daa6fd0246b503e75b789ab74
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Axe_Slash_0: 1590128771109078370
+      Axe_Slash_1: 5238394555376253946
+      Axe_Slash_2: -3935953063909739312
+      Axe_Slash_3: -8125753863490127474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+

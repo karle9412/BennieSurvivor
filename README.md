@@ -21,6 +21,8 @@ Unity 6와 C#으로 개발하는 2D 탑다운 Survivors-like 액션 팬게임입
 - 누루링 Idle 애니메이션 및 거리 제한 없는 추적
 - 공통 Health 컴포넌트와 체력 0에서 오브젝트 비활성화
 - 누루링 접촉 중 일정 간격의 피해, 접촉 해제 시 피해 중단
+- 화면 바깥에서 1초 간격 몬스터 생성 및 생성 직후 추적 대상 연결
+- 도끼 휘두르기 4프레임 이펙트 준비 (공격 연결 전)
 
 ## 프로젝트 관리
 
@@ -30,15 +32,16 @@ Unity 6와 C#으로 개발하는 2D 탑다운 Survivors-like 액션 팬게임입
 
 ## 확인할 사항
 
-- 플레이어의 피격 무적 시간은 아직 구현하지 않았습니다.
+- 플레이어 피격 무적 시간은 0.5초입니다. 자동 공격과 공격 판정은 아직 구현하지 않았습니다.
 - 캐릭터 기본 규격은 프레임당 128×128px, PPU 128, Scale (1, 1, 1)입니다. Point 필터와 무압축을 권장합니다.
 - 접촉 중 체력 감소, 접촉 해제 시 피해 중단, 체력 0에서 베니 비활성화는 사용자가 Play 모드에서 확인했습니다. 폴더 정리 후 재임포트와 빌드는 별도 확인이 필요합니다.
 
 ## 에셋 폴더 구조
 
 - `Assets/01.Script/`: `Player`, `Enemies`, `Common`, `Camera`, `World` 역할별 스크립트
-- `Assets/02.Image/`: `Bennie`, `Nururing`, `Environment` 이미지
-- `Assets/03.Animation/`: `Bennie`, `Nururing` 애니메이션과 컨트롤러
+- `Assets/02.Image/`: `Bennie`, `Nururing`, `Environment`, `Effects` 이미지
+- `Assets/03.Animation/`: `Bennie`, `Nururing`, `Effects` 애니메이션과 컨트롤러
+- `Assets/04.Prefab/`: `Player`, `Enemies` 프리팹
 - `Assets/Scenes/`: 게임 씬
 - `Assets/Settings/`: 렌더링 및 프로젝트 에셋 설정
 
@@ -50,3 +53,4 @@ Unity 6와 C#으로 개발하는 2D 탑다운 Survivors-like 액션 팬게임입
 원작 IP의 권리는 해당 권리자에게 있습니다.
 공식 리소스를 추출하거나 복제하지 않고 새로 제작한 팬아트 리소스를 사용하는 것을 제작 원칙으로 합니다.
 무료·비상업적 프로젝트이며, 이 저장소는 원작 IP에 대한 사용 권한을 부여하지 않습니다.
+

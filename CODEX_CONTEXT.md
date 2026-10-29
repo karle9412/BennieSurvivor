@@ -377,3 +377,18 @@ Codex가 프로젝트를 처음 열었을 때 우선 확인할 것:
 - 스크립트는 Player/Enemies/Common/Camera/World, 이미지는 Bennie/Nururing/Environment, 애니메이션은 Bennie/Nururing 하위 폴더로 분류했다.
 - 에셋과 기존 .meta를 함께 이동해 GUID를 유지했다. 코드 동작은 폴더 정리 과정에서 변경하지 않았다.
 - 사용자는 직접 코드를 작성하며 학습한다. 별도 수정 요청 없이 스크립트를 직접 추가하거나 변경하지 말고 코드와 적용 방법을 안내한다.
+
+## 16. 무적 시간·화면 밖 스폰·공격 이펙트 준비 (2026-10-29)
+
+- Health는 실제 피해를 받은 후 다음 피해 가능 시간을 갱신한다. 베니 무적 시간은 0.5초, 누루링은 0초로 프리팹에 설정했다.
+- Enemy는 Collision Enter/Exit로 접촉 여부를 기록하고, FixedUpdate에서 접촉 중 공격하거나 추적한다. 비활성화된 Target은 추적하지 않는다.
+- MonsterSpawner는 카메라 Viewport 네 변 바깥에서 생성하고 SetTarget으로 베니를 연결한다. 저장된 씬의 생성 간격은 1초이며 카메라가 연결되어 있다. 스크립트에는 카메라 미할당 방어 조건이 아직 없다.
+- 누루링은 Dynamic 및 비Trigger Collider로 다른 몬스터와 충돌하도록 설정했다. 사용자가 정상 동작을 확인했다.
+- 스포너: Assets/01.Script/Enemies/MonsterSpawner.cs
+- 프리팹: Assets/04.Prefab/Player/Player.prefab, Assets/04.Prefab/Enemies/Nururing_Fairy_Tanker.prefab
+- 도끼 이펙트 이미지: Assets/02.Image/Effects/Axe_Slash.png. 실제 256×256, 2열×2행, 프레임당 128×128, PPU 128.
+- 이펙트 애니메이션과 컨트롤러: Assets/03.Animation/Effects/. Axe_Effect.anim은 현재 12 FPS, Loop Time 켜짐 상태의 준비 에셋이다.
+- 사용자가 선택한 기본 공격 이펙트 Scale은 (5, 5, 1)이다. 향후 레벨업 크기 배율을 별도로 곱하고 실제 공격 판정도 함께 확대한다.
+- 자동 공격과 피해 판정은 아직 구현하지 않았다. 다음 작업은 공격 주기, 적 방향 이펙트, 한 번 재생 후 숨김, 휘두르기당 동일 적 중복 피해 방지이다.
+- 폴더 정리는 기존 .meta와 GUID를 유지해 수행했으며 스크립트 동작은 변경하지 않았다.
+
